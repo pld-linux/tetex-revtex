@@ -1,5 +1,5 @@
 %define _short_name 	revtex
-Summary:	Set of LaTeX macros for prepering slides
+Summary:	Set of LaTeX macros for physicists.
 Name:		tetex-revtex
 Version:	3.1
 Release:	3
@@ -17,6 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
 %description
+Set of LaTeX macros for physicists.
+
 %prep
 %setup -q -c -n %{_short_name}
 %patch0 -p1
