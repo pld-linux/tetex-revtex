@@ -1,29 +1,32 @@
 %define _short_name 	revtex
-Summary:	Set of LaTeX macros for physicists.
+Summary:	Set of LaTeX macros for physicists
+Summary(pl):	Zestaw makr LaTeXa dla fizyków
 Name:		tetex-revtex
 Version:	3.1
 Release:	3
-Copyright:	nocommercial	
+License:	non-commercial	
 Group:		Applications/Publishing/TeX
+Group(de):	Applikationen/Publizieren/TeX
+Group(es):	Aplicaciones/Editoración/TeX
 Group(pl):	Aplikacje/Publikowanie/TeX
+Group(pt_BR):	Aplicações/Editoração/TeX
 Source0:	ftp://ftp.dante.de/tex-archive/macros/latex209/contrib/revtex/%{_short_name}%{version}.tar.gz
-Patch0:		tetex-revtex-array.patch
+Patch0:		%{name}-array.patch
 %requires_eq	tetex
 %requires_eq	tetex-latex
 BuildRequires:	tetex-latex
 Prereq:		tetex
-Prereq:		/usr/bin/mktexlsr
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 Set of LaTeX macros for physicists.
 
+%description -l pl
+Zestaw makr LaTeXa dla fizyków.
+
 %prep
 %setup -q -c -n %{_short_name}
 %patch0 -p1
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -36,11 +39,8 @@ install *.sty *.bst $RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{_short_name}
 
 gzip -9nf README *.tex
 
-%post 
-/usr/bin/mktexlsr
-
-%postun
-/usr/bin/mktexlsr
+%post	-p /usr/bin/mktexlsr
+%postun	-p /usr/bin/mktexlsr
 
 %clean
 rm -rf $RPM_BUILD_ROOT
