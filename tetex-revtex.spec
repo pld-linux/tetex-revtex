@@ -2,14 +2,14 @@
 Summary:	Set of LaTeX macros for prepering slides
 Name:		tetex-revtex
 Version:	3.1
-Release:	2
+Release:	3
 Copyright:	nocommercial	
 Group:		Applications/Publishing/TeX
 Group(pl):	Aplikacje/Publikowanie/TeX
 Source0:	ftp://ftp.dante.de/tex-archive/macros/latex209/contrib/revtex/%{_short_name}%{version}.tar.gz
 Patch0:		tetex-revtex-array.patch
-Requires:	tetex
-Requires:	tetex-latex
+%requires_eq	tetex
+%requires_eq	tetex-latex
 BuildRequires:	tetex-latex
 Prereq:		tetex
 Prereq:		/usr/bin/mktexlsr
