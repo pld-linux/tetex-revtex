@@ -6,10 +6,6 @@ Version:	3.1
 Release:	3
 License:	non-commercial	
 Group:		Applications/Publishing/TeX
-Group(de):	Applikationen/Publizieren/TeX
-Group(es):	Aplicaciones/Editoración/TeX
-Group(pl):	Aplikacje/Publikowanie/TeX
-Group(pt_BR):	Aplicações/Editoração/TeX
 Source0:	ftp://ftp.dante.de/tex-archive/macros/latex209/contrib/revtex/%{_short_name}%{version}.tar.gz
 Patch0:		%{name}-array.patch
 %requires_eq	tetex
