@@ -33,7 +33,6 @@ install *.cls *.sty *.bst $RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{_short_na
 
 install *.sty *.bst $RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{_short_name}
 
-gzip -9nf README *.tex
 
 %post	-p %{_bindir}/mktexlsr
 %postun	-p %{_bindir}/mktexlsr
@@ -43,5 +42,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README *.tex
 %{_datadir}/texmf/tex/latex/%{_short_name}/*
