@@ -7,6 +7,7 @@ Release:	3
 License:	non-commercial
 Group:		Applications/Publishing/TeX
 Source0:	http://ftp.agh.edu.pl/pub/tex/macros/latex209/contrib/revtex/%{_short_name}%{version}.tar.gz
+# Source0-md5:	70de3a42b831a26bfa3f1521944d7a56
 Patch0:		%{name}-array.patch
 %requires_eq	tetex
 %requires_eq	tetex-latex
