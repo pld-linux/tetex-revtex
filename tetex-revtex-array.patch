@@ -1,0 +1,20 @@
+diff -urN revtex/revtex.cls revtex-new/revtex.cls
+--- revtex/revtex.cls	Thu Jan  1 01:00:00 1970
++++ revtex-new/revtex.cls	Mon Sep 11 15:03:13 2000
+@@ -0,0 +1,16 @@
++%%%%  Start of file revtex.cls %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
++%%
++%% This file allows REVTeX v3.1 to function correctly under
++%% the 12/94 release of LaTeX 2e. Put this file wherever
++%% revtex.sty is. Continue to use \documentstyle{revtex}
++%% (with the correct options) and REVTeX will run normally
++%% in compatibility mode. Thanks to David Carlisle for
++%% pointing out this fix.
++
++\ifx\every@math@size\undefined\else
++  \let\old@expast\@expast
++  \def\@expast#1{\old@expast{#1}\let\@tempa\reserved@a}
++\fi
++
++\input{revtex.sty}
++%%%%  End of file revtex.cls %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%      
