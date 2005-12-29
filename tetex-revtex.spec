@@ -4,7 +4,7 @@ Summary(pl):	Zestaw makr LaTeXa dla fizyków
 Name:		tetex-revtex
 # NOTE: this is _not_ intended to be upgraded to v4 (or any newer)
 Version:	3.1
-Release:	3
+Release:	4
 License:	non-commercial
 Group:		Applications/Publishing/TeX
 Source0:	http://ftp.agh.edu.pl/pub/tex/macros/latex209/contrib/revtex/%{_short_name}%{version}.tar.gz
