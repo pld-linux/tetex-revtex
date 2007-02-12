@@ -1,6 +1,6 @@
 %define	_short_name 	revtex
 Summary:	Set of LaTeX macros for physicists
-Summary(pl.UTF-8):   Zestaw makr LaTeXa dla fizyków
+Summary(pl.UTF-8):	Zestaw makr LaTeXa dla fizyków
 Name:		tetex-revtex
 # NOTE: this is _not_ intended to be upgraded to v4 (or any newer)
 Version:	3.1
