@@ -1,6 +1,6 @@
 %define	_short_name 	revtex
 Summary:	Set of LaTeX macros for physicists
-Summary(pl):	Zestaw makr LaTeXa dla fizyków
+Summary(pl.UTF-8):   Zestaw makr LaTeXa dla fizykÃ³w
 Name:		tetex-revtex
 # NOTE: this is _not_ intended to be upgraded to v4 (or any newer)
 Version:	3.1
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Set of LaTeX macros for physicists.
 
-%description -l pl
-Zestaw makr LaTeXa dla fizyków.
+%description -l pl.UTF-8
+Zestaw makr LaTeXa dla fizykÃ³w.
 
 %prep
 %setup -q -c -n %{_short_name}
