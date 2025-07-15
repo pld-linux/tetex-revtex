@@ -23,7 +23,7 @@ Zestaw makr LaTeXa dla fizyków.
 
 %prep
 %setup -q -c -n %{short_name}
-%patch0 -p1
+%patch -P0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
